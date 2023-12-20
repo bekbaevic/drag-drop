@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Box Icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Sweat Alert cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Toestify cdns -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.5.0/toastify.js" integrity="sha512-0M1OKuNQKhBhA/vqxH7OaS1LZlDwSrSbL3QzcmrlNbkWV0U4ewn8SWfVuRS5nLGV9IXsuNnkdqzyXOYXc0Eo9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.5.0/toastify.css" integrity="sha512-1xBbDQd2ydreJtocowqI+QS+xYVYdv96rB4xu/Peb5uD3SEtCJkGjnMCV3m8oH7XW35KsjqcTR6AytS5H8h8NA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- TailwindCSS cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- TailwindCSS configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    xs: "0px",
+                    sm: "420px",
+                    md: "768px",
+                    lg: "1024px"
+                },
+            },
+        }
+    </script>
+</head>
+<body>
+
+    <section class="w-full h-screen bg-[url(https://images3.alphacoders.com/133/1332803.png)] bg-cover">
+
+        <!-- Heading -->
+        <h1 class="xs: w=[95%] md: w-[90%] mx-auto py-12 text-white xs: text-center  text-2xl">Learning Managament System Leadboard</h1>
+
+        <!-- Wrapper -->
+        <div class="w-[90%] mx-auto flex gap-4 rounded-md h-[70vh] overflow-auto items-start">
+
+            <!-- Modules Container -->
+            <div id="modules-container" class="flex gap-4 h-full">
+            </div>
+
+            <!-- Module Add Form -->
+            <div class="w-[320px] min-w-[320px] max-w-[320px] border border-[rgba(255, 255, 255, 0.1)] rounded-md p-2 bg-gray-300 bg-opacity-30 backdrop-filter backdrop-blur-sm">
+                <form id="module-form" class="flex flex-col ">
+                    <input class="w-full px-3 py-1 rounded-md" type="text" placeholder="Module name" id="module-input" required>
+                    <button id="module-btn" class="w-full bg-indigo-500 text-white mt-2 rounded-md py-1 hover:bg-indigo-600 active:transform-scale(0.1)">Create</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>
